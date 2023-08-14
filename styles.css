@@ -4,12 +4,15 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #ececec;
+    background-image: url('background.png'); /* Add this line */
+    background-size: cover;                 /* This will cover the entire viewport */
+    background-repeat: no-repeat;           /* This will prevent the image from repeating */
+    background-position: center center;     /* This will center the image */
 }
 
 .countdown-container {
     text-align: center;
-    background: #fff;
+    background: rgba(255, 255, 255, 0.8);   /* Adding some transparency to the container */
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
