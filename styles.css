@@ -12,13 +12,13 @@ body {
 }
 
 .wrapper {
-    width: 50%;
+    width: 90%;
 }
 
 .countdown-container {
     text-align: center;
     background: rgba(255, 255, 255, 0.8);   /* Adding some transparency to the container */
-    padding: 20px;
+    padding: 5px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
@@ -27,7 +27,7 @@ body {
 
 .toggle-container{
     width: 100%;
-    padding: 20px;
+    padding: 5px;
 }
 
 .timer span {
@@ -55,7 +55,7 @@ body {
 
 br {
     display: block;
-    margin: 10px 0;
+    margin: 5px 0;
 }
 
 /* Arrow Styles */
