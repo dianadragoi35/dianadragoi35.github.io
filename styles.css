@@ -1,13 +1,18 @@
 body {
     font-family: 'Arial', sans-serif;
     display: flex;
+    flex-direction: column; /* Add this line */
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: url('background.png'); /* Add this line */
-    background-size: cover;                 /* This will cover the entire viewport */
-    background-repeat: no-repeat;           /* This will prevent the image from repeating */
-    background-position: center center;     /* This will center the image */
+    background-image: url('background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.wrapper {
+    width: 50%;
 }
 
 .countdown-container {
@@ -16,9 +21,99 @@ body {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.toggle-container{
+    width: 100%;
+    padding: 20px;
 }
 
 .timer span {
     font-size: 2em;
     margin: 0 10px;
 }
+
+.toggle-section{
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.toggle-section p {
+    padding-left: 20px;
+}
+
+.arrow {
+    margin-left: 10px;
+}
+
+br {
+    display: block;
+    margin: 10px 0;
+}
+
+/* Arrow Styles */
+.arrow-down {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.arrow-down:before, .arrow-down:after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 2.5px;
+    background: black;
+    position: absolute;
+    top: 8.5px;
+    transition: transform .5s;
+}
+
+.arrow-down:before {
+    right: 10.5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    transform: rotate(45deg);
+}
+
+.arrow-down:after {
+    right: 5px;
+    transform: rotate(-45deg);
+}
+
+.arrow-down.active:before {
+    transform: rotate(-45deg);
+}
+
+.arrow-down.active:after {
+    transform: rotate(45deg);
+}
+
+.download-button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.download-button:hover {
+    background-color: #45a049;
+}
+
