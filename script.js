@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 });
 document.addEventListener("DOMContentLoaded", function() {
     // assuming each h3 is a direct child of a .toggle-section
-    const sections = document.querySelectorAll('.toggle-section h3');
+    const sections = document.querySelectorAll('.toggle-section h4');
 
     sections.forEach(section => {
         section.addEventListener('click', function() {
