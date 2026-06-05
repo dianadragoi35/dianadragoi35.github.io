@@ -1,40 +1,207 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-g" />
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍳</text></svg>">
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gemini Recipe Generator</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            fontFamily: {
-              sans: ['Poppins', 'sans-serif'],
-              serif: ['Playfair Display', 'serif'],
-            },
-          },
-        },
-      }
-    </script>
-  <script type="importmap">
-{
-  "imports": {
-    "react": "https://aistudiocdn.com/react@^19.1.1",
-    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
-    "react/": "https://aistudiocdn.com/react@^19.1.1/",
-    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.19.0"
-  }
-}
-</script>
-</head>
-  <body class="bg-amber-50 font-sans">
-    <div id="root"></div>
-    <script type="module" src="/index.tsx"></script>
+    <meta name="description" content="Diana Dragoi - Backend Developer with 8+ years building scalable web applications in PHP, Laravel, and Magento 2." />
+    <meta name="author" content="Diana Dragoi" />
+
+    <!-- Open Graph (social preview) -->
+    <meta property="og:title" content="Diana Dragoi - Backend Developer" />
+    <meta property="og:description" content="8+ years building scalable web applications in PHP, Laravel, and Magento 2." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://dianadragoi35.github.io/" />
+
+    <title>Diana Dragoi - Backend Developer</title>
+
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✦</text></svg>" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <!-- Skip link for accessibility -->
+    <a href="#main" class="skip-link">Skip to content</a>
+
+    <header class="site-header">
+      <nav class="nav container" aria-label="Primary">
+        <a href="#top" class="nav__brand">DD</a>
+        <ul class="nav__links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle dark mode">
+          <span class="theme-toggle__icon" aria-hidden="true">◐</span>
+        </button>
+      </nav>
+    </header>
+
+    <main id="main">
+      <!-- ===== Hero ===== -->
+      <section id="top" class="hero container">
+        <div class="hero__inner reveal">
+          <p class="hero__eyebrow">Hi, I'm</p>
+          <h1 class="hero__name">Diana Dragoi</h1>
+          <p class="hero__role">Backend Developer <span class="hero__sep">·</span> Breda, Netherlands</p>
+          <p class="hero__tagline">
+            I turn coffee and edge cases into working software. PHP, Laravel,
+            Magento - yes, on purpose.
+          </p>
+          <div class="hero__actions">
+            <a href="#contact" class="btn btn--primary">Get in touch</a>
+            <a href="#about" class="btn btn--ghost">More about me ↓</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== About ===== -->
+      <section id="about" class="section container">
+        <div class="section__head reveal">
+          <span class="section__num">01</span>
+          <h2 class="section__title">About</h2>
+        </div>
+        <div class="about reveal">
+          <div class="about__text">
+            <p>
+              I'm a backend developer based in <strong>Breda, the Netherlands</strong>,
+              specialized in PHP, Laravel, and Magento&nbsp;2 - with a strong focus on
+              performance, clean architecture, and maintainability. Over 8+ years I've
+              built and maintained scalable web applications, turning complex business
+              requirements into secure, efficient solutions.
+            </p>
+            <p>
+              I love delivering software that makes a real impact and collaborating
+              across teams to foster innovation and improve the user experience.
+              Lately I'm especially interested in AI &amp; automation tools that make
+              development more efficient, and in sustainable tech.
+            </p>
+          </div>
+          <aside class="about__card">
+            <!-- Replace the DD monogram with a real photo at ./assets/avatar.jpg if you like -->
+            <div class="about__avatar" aria-hidden="true">DD</div>
+            <ul class="about__facts">
+              <li><span>Role</span> Backend Developer</li>
+              <li><span>Location</span> Breda, NL</li>
+              <li><span>Experience</span> 8+ years</li>
+              <li><span>Languages</span> EN · RO · NL</li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+
+      <!-- ===== Experience ===== -->
+      <section id="experience" class="section container">
+        <div class="section__head reveal">
+          <span class="section__num">02</span>
+          <h2 class="section__title">Experience</h2>
+        </div>
+        <ol class="timeline">
+          <li class="timeline__item reveal">
+            <div class="timeline__when">Apr 2026 – Present</div>
+            <div class="timeline__body">
+              <h3 class="timeline__role">Developer</h3>
+              <p class="timeline__org">El Niño - Digital Development · Full-time</p>
+              <p class="timeline__desc">
+                Building digital products as part of a cross-functional development
+                team, with a focus on clean, maintainable, performance-minded backend work.
+              </p>
+            </div>
+          </li>
+          <li class="timeline__item reveal">
+            <div class="timeline__when">May 2022 – Apr 2026</div>
+            <div class="timeline__body">
+              <h3 class="timeline__role">Magento 2 Developer</h3>
+              <p class="timeline__org">WebElephant · Full-time · Breda, NL</p>
+              <p class="timeline__desc">
+                Designed and maintained custom Magento&nbsp;2 modules to extend
+                functionality and improve performance. Integrated third-party APIs
+                to optimize automation and user experience, and ensured security and
+                uptime across multiple client stores through proactive maintenance
+                and monitoring. Mentored junior developers, sharing best practices in
+                clean code.
+              </p>
+            </div>
+          </li>
+          <li class="timeline__item reveal">
+            <div class="timeline__when">Aug 2017 – May 2022</div>
+            <div class="timeline__body">
+              <h3 class="timeline__role">Full-stack Developer</h3>
+              <p class="timeline__org">Ministry of Internal Affairs · Full-time · Bucharest, RO</p>
+              <p class="timeline__desc">
+                Developed and maintained 20+ web applications using PHP (Yii),
+                MySQL, JavaScript, and jQuery. Built responsive dashboards and
+                internal management systems for national IT operations, led database
+                design, migrations, and legacy-system integration.
+              </p>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <!-- ===== Skills ===== -->
+      <section id="skills" class="section container">
+        <div class="section__head reveal">
+          <span class="section__num">03</span>
+          <h2 class="section__title">Skills</h2>
+        </div>
+        <div class="skills reveal">
+          <div class="skills__group">
+            <h3>Languages &amp; Databases</h3>
+            <ul class="tags">
+              <li>PHP</li>
+              <li>JavaScript</li>
+              <li>MySQL</li>
+            </ul>
+          </div>
+          <div class="skills__group">
+            <h3>Frameworks &amp; Platforms</h3>
+            <ul class="tags">
+              <li>Magento 2</li>
+              <li>Laravel</li>
+              <li>Symfony</li>
+              <li>Yii Framework</li>
+            </ul>
+          </div>
+          <div class="skills__group">
+            <h3>Also into</h3>
+            <ul class="tags">
+              <li>AI &amp; automation</li>
+              <li>Sustainable tech</li>
+              <li>Clean architecture</li>
+              <li>Problem-solving</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== Contact ===== -->
+      <section id="contact" class="section section--contact container">
+        <div class="section__head reveal">
+          <span class="section__num">04</span>
+          <h2 class="section__title">Contact</h2>
+        </div>
+        <div class="contact reveal">
+          <p class="contact__lead">
+            Want to work together, or just say hello? I'd love to hear from you.
+          </p>
+          <a class="contact__email" href="mailto:dianadragoi35@gmail.com">dianadragoi35@gmail.com</a>
+          <ul class="contact__links">
+            <li><a href="https://github.com/dianadragoi35" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/dianadrgoi/" target="_blank" rel="noopener">LinkedIn</a></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer container">
+      <p>© <span id="year"></span> Diana Dragoi · Built with care, hosted on GitHub Pages.</p>
+    </footer>
+
+    <script src="./script.js"></script>
   </body>
 </html>
